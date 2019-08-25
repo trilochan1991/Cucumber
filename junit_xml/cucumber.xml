@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="36.552544">
+<testcase classname="Facebook signin" name="valid google login" time="36.552544">
+<system-out><![CDATA[Given enter fcebook invalidusername.........................................passed
+When enter facebook invalidpassword.........................................passed
+Then US124 Enter the first name.............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
