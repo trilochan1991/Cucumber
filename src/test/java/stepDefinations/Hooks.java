@@ -27,6 +27,10 @@ public class Hooks {
 	@Before(order = 0)	
 	public void beforeTest()
 	{
+		try(InputStream is = getClass().getClassLoader().getResourceStream("base/cont.json");){
+		List<webelementControl> webelement;	
+		webelement = new ObjectMapper().readValue(is, new TypeReference<List<WebElementControl>>(){});				
+		}catch{};
 		Reporter.assignAuthor("Trilochan Pradhan");		
 		TextContext.getwebdriverManager().getDriver();
 		TextContext.getwebdriverManager().setup();
